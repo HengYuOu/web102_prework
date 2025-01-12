@@ -20,7 +20,14 @@ body {
 }
 
 .stats-container {
-    display: flex;
+  display: flex; /* Enables flexbox */
+  align-items: center; /* Aligns items along the cross axis (vertically if flex-direction is row) */
+  justify-content: center; /* Optional: Centers items horizontally */
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
